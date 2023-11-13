@@ -38,16 +38,21 @@ export default class Main extends Component {
         return <p>Loading...</p>
       } else {
         return (
+
+
           <div>
             <div className="imageList-box">
               {items.map((items) => (
-                <div key={items.id} className="image-box">
-                  <img src={items.image}/>
+                <div key={items.id + items.id} className="image-box">
+                  <button key ={items.id}className="image-box-button" onClick={()=> {console.log(items.id)}}><img src={items.image}/></button>
                   <p>id: {items.id}</p>
                 </div>
+                
               ))}
             </div>
           </div>
+
+
         )
       }
     }
