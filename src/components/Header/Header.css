@@ -5,3 +5,66 @@
 .Header .HeaderBanner {
     width: 80vw;
 }
+
+.Avatar {
+    height: 5vw;
+}
+
+.Avatar{
+    position: relative;
+    z-index: 2;
+    right: 20%;
+    top: 20%
+
+}
+
+.AvatarImg {
+    position: relative;
+    bottom: 90%;
+    width: 8.25%;
+}
+
+.AvatarName {
+    position: relative;
+    top: -8vw;
+    left: 10vw;
+    width: auto;
+    font-size: 1.2vw;
+}
+.headerButtons {
+    width: 12.5vw;
+    display: flex;
+    position: relative;
+    margin-left: 40vw;
+    top: -9.5vw;
+    left: 35vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.headerButtons button {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2vw;
+    font-size: 0.8vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.Button-Mesage {
+width: 20%;
+}
+
+.Button-Call{
+    width: 10%;
+    }
+
+.headerButtons button img{
+  margin-right: 0.4vw;
+  width: 50%;
+}
