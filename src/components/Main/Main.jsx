@@ -1,4 +1,5 @@
 import { Component } from "react"
+import "./main.css"
 
 export default class Main extends Component {
     constructor(props) {
@@ -38,14 +39,14 @@ export default class Main extends Component {
       } else {
         return (
           <div>
-            <ul>
+            <div className="imageList-box">
               {items.map((items) => (
-                <li key={items.id}>
-                  <img width="200px" src={items.image} />
+                <div key={items.id} className="image-box">
+                  <img src={items.image}/>
                   <p>id: {items.id}</p>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         )
       }
